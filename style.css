@@ -1,0 +1,54 @@
+/* Import and Reset  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colours and Font Styles  */
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex; 
+    flex-direction: column;
+    --dark-blue-color: #1F2937;
+    --light-blue-color: #3882F6;
+    --white-color: #F9FAF8;
+    --grey-color: #E5E7EB;
+    --bold-weight: 900;
+    --logo-weight: 700;
+    --reg-weight: 400;
+    --light-weight: 200;
+}
+
+/* Header */
+
+.header {
+    background-color: var(--dark-blue-color);
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--white-color);
+    font-weight: var(--logo-weight);
+    font-size: 24px;
+}
+
+a {
+    color: var(--grey-color);
+    font-weight: var(--light-weight);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
