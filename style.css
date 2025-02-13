@@ -23,6 +23,7 @@ body {
     --bold-weight: 700;
     --reg-weight: 400;
     --light-weight: 200;
+    color: var(--dark-blue-color);
 }
 
 .content {
@@ -109,20 +110,21 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px 64px 32px;
+    padding: 64px 64px 64px;
 }
 
 .service-container {
     display: flex;
     justify-content: center;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .service-header {
-    color: var(--dark-blue-color);
     font-weight: var(--x-bold-weight);
     font-size: 36px;
     margin-bottom: 48px;
+    text-align: center;
 }
 
 .service-item {
@@ -137,4 +139,37 @@ ul {
     width: 160px;
     height: 160px;
     margin-bottom: 16px;
+}
+
+.subtext {
+    text-align: center;
+}
+
+/* Quote Section */
+
+.quote-section {
+    background-color: var(--grey-color);
+    display: flex;
+    justify-content: center;
+    padding: 64px 64px 64px;
+}
+
+.quote-container {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: var(--light-weight);
+    margin-bottom: 24px;
+}
+
+.quote-person {
+    font-weight: var(--bold-weight);
+    font-size: 20px;
+    text-align: right;
+    padding-right: 64px;
 }
