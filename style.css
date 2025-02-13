@@ -32,9 +32,9 @@ body {
 
 /* Header */
 
-.header {
+.header-section {
     background-color: var(--dark-blue-color);
-    padding: 24px 64px;
+    padding: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,24 +63,22 @@ ul {
 
 .hero-section {
     background-color: var(--dark-blue-color);
-    padding: 72px 64px 64px;
+    padding: 72px 24px  64px;
     display: flex;
-    justify-content: space-around;
-    gap: 80px;
-}
-
-.left-hero {
-    width: 400px;
-    flex: auto;
-}
-
-.right-hero {
-    background-color: lightgrey;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    min-width: 400px;
-    flex: auto;
+    gap: 60px;
+}
+
+.left-hero,
+.right-hero {
+    min-width: 300px;
+    max-width: 450px;
+    flex: 1;
+}
+
+.right-hero img {
+    width: 100%;
 }
 
 .hero-header {
@@ -109,10 +107,7 @@ ul {
 /* Services Section */
 
 .service-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 64px 64px 64px;
+    padding: 64px;
 }
 
 .service-container {
@@ -130,16 +125,14 @@ ul {
 }
 
 .service-item {
-    width: 200px;
+    width: 216px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.icon {
-    background-color: lightgrey;
-    width: 160px;
-    height: 160px;
+.icon img{
+    width: 100%;
     margin-bottom: 16px;
 }
 
