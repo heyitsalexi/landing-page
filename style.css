@@ -92,6 +92,8 @@ ul {
 
 .hero-text {
     color: var(--grey-color);
+    font-size: 16px;
+    font-weight: var(--light-weight);
     margin-bottom: 16px;
 }
 
@@ -172,4 +174,52 @@ ul {
     font-size: 20px;
     text-align: right;
     padding-right: 64px;
+}
+
+/* CTA Section */
+
+.cta-section {
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container {
+    background-color: var(--light-blue-color);
+    padding: 64px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-header {
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: var(--bold-weight);
+    margin-bottom: 8px;
+}
+
+.cta-subtitle {
+    color: var(--grey-color);
+    font-size: 16px;
+    font-weight: var(--light-weight);
+}
+
+.secondary-button {
+    background-color: var(--light-blue-color);
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    border-radius: 8px;
+    padding: 8px 24px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark-blue-color);
+    color: var(--grey-color);
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
