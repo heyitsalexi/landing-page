@@ -38,6 +38,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
 }
 
 .logo {
@@ -92,7 +93,7 @@ ul {
     color: var(--grey-color);
     font-size: 16px;
     font-weight: var(--light-weight);
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .primary-button {
@@ -144,11 +145,16 @@ ul {
 
 .quote-section {
     background-color: var(--grey-color);
+    padding: 64px;
+}
+
+.quote-container {
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 64px;
+    max-width: 720px;
 }
 
 .quote {
@@ -156,15 +162,14 @@ ul {
     font-style: italic;
     font-weight: var(--light-weight);
     margin-bottom: 24px;
-    max-width: 720px;
     flex: 1;
 }
 
 .quote-person {
     font-weight: var(--bold-weight);
     font-size: 20px;
-    text-align: right;
-    padding-right: 64px;
+    align-self: flex-end;
+    padding-right: 32px;
 }
 
 /* CTA Section */
