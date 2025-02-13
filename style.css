@@ -145,14 +145,10 @@ ul {
 .quote-section {
     background-color: var(--grey-color);
     display: flex;
-    justify-content: center;
-    padding: 64px 64px 64px;
-}
-
-.quote-container {
-    width: 700px;
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
 }
 
 .quote {
@@ -160,6 +156,8 @@ ul {
     font-style: italic;
     font-weight: var(--light-weight);
     margin-bottom: 24px;
+    max-width: 720px;
+    flex: 1;
 }
 
 .quote-person {
@@ -179,10 +177,12 @@ ul {
 
 .cta-container {
     background-color: var(--light-blue-color);
-    padding: 64px;
-    width: 800px;
+    padding: 48px;
+    width: 720px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .cta-header {
@@ -204,6 +204,7 @@ ul {
     border: 2px solid var(--white-color);
     border-radius: 8px;
     padding: 8px 24px;
+    align-self: center;
 }
 
 /* Footer */
