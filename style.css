@@ -18,8 +18,8 @@ body {
     --light-blue-color: #3882F6;
     --white-color: #F9FAF8;
     --grey-color: #E5E7EB;
-    --bold-weight: 900;
-    --logo-weight: 700;
+    --x-bold-weight: 900;
+    --bold-weight: 700;
     --reg-weight: 400;
     --light-weight: 200;
 }
@@ -28,7 +28,7 @@ body {
 
 .header {
     background-color: var(--dark-blue-color);
-    padding: 24px;
+    padding: 24px 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +36,7 @@ body {
 
 .logo {
     color: var(--white-color);
-    font-weight: var(--logo-weight);
+    font-weight: var(--bold-weight);
     font-size: 24px;
 }
 
@@ -51,4 +51,53 @@ ul {
     list-style: none;
     display: flex;
     gap: 24px;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background-color: var(--dark-blue-color);
+    padding: 72px 64px 64px;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+/* .left-hero, 
+.right-hero {
+    width: 400px;
+} */
+.left-hero {
+    width: 400px;
+    flex: auto;
+}
+
+.right-hero {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    flex: auto;
+}
+
+.hero-header {
+    color: var(--white-color);
+    font-weight: var(--bold-weight);
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero-text {
+    color: var(--grey-color);
+    margin-bottom: 16px;
+}
+
+.primary-button {
+    background-color: var(--light-blue-color);
+    color: var(--white-color);
+    font-weight: var(--bold-weight);
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: none;
 }
